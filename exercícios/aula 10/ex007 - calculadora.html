@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <input type="button" value="dividir" onclick="dividir()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="exp" onclick="exp()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `a soma entre ${n1} e ${n2} é ${s}`
+        }
+        function subtrair(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 - n2
+            res.innerHTML = `a subtração entre ${n1} e ${n2} é ${s}`
+        }
+        function dividir(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 / n2
+            res.innerHTML = `a divisão de ${n1} por ${n2} é ${s}`
+        }
+        function multiplicar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            res.innerHTML = `a multiplicação de ${n1} x ${n2} é ${s}`
+        }
+        function exp(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = Math.pow(n1, n2)
+            res.innerHTML = `a exponenciação de ${n1} elevado a ${n2} é ${s}`
+        }
+
+    </script>
+    
+</body>
+</html>
