@@ -3,6 +3,7 @@ function verify(){
     var year = date.getFullYear()
     var res = document.getElementById('res')
     var fyear = window.document.getElementById('txtyear').value
+    var fage = year - Number(fyear.value).value
 
     if(fyear.value == 0 || Number(fyear.value) > year){
         window.alert('[ERRO] - Verifique os dados e tente novamente.')}
