@@ -10,21 +10,22 @@
 <body>
     <header>Ferramentas matemáticas</header>
     <section>
-        <h1>Tabuada</h1>
-        <div id="divpmudar">
+        <h1>Tabuada</h1> <!--TABUADA-->
+        <div>
             <p>Número <br><input type="number" name="1-txtn1" id="1-txtn1"></p>
         </div>
-        <div id="divpmudar">
+        <div>
             <p>Quantas casas você quer na tabuada? <input type="number" name="1-txtn2" id="1-txtn2"></p>
             <input type="button" value="Gerar tabuada" onclick="gerar()">
         </div>
         <div>
-            <p id="res1">Insira os dados e clique para gerar a tabuada.</p>
+            <select name="select1" id="select1" size="10"></select>
+            <p id="res0">Insira os dados e clique para gerar a tabuada.</p>
         </div>
     </section>
 
     <section>
-        <h1>Calculadora</h1>
+        <h1>Calculadora</h1> <!--CALCULADORA-->
         <p>Insira o primeiro número: <input type="number" name="2-txtn1" id="2-txtn1"></p>
         <p>Insira o segundo número: <input type="number" name="2-txtn2" id="2-txtn2"></p>
         <input type="button" value="somar" onclick="somar()">
@@ -32,37 +33,37 @@
         <input type="button" value="dividir" onclick="dividir()">
         <input type="button" value="multiplicar" onclick="multi()">
         <input type="button" value="exponenciação" onclick="expo()">
-        <p id="res2">Insira os dados acima e faça a conta</p>  
+        <p id="res1">Insira os dados acima e faça a conta</p>  
     </section>
 
     <section>
-        <h1>Conversor de medidas de tamanho</h1>
-        <p>Insira o primeiro dado <input type="number" name="3-txt1" id="3-txt1"> 
-            <select name="" id="caixaselect">
+        <h1>Conversor de medidas de tamanho</h1><!--CONVERSOR TAMANHO-->
+        <p>Insira a quantidade<br><input type="number" name="3-txt1" id="3-txt1"> 
+            <select name="" id="select-medidas">
                 <option value="mi">mi</option>
                 <option value="cm">cm</option>
                 <option value="m">m</option>
                 <option value="km">km</option>
             </select></p>
-        <p>Insira o segundo dado <input type="number" name="3-txtn2" id="3-txtn2">
-            <select name="" id="caixaselect">
-                <option value="mi">mi</option>
-                <option value="cm">cm</option>
-                <option value="m">m</option>
-                <option value="km">km</option>
-            </select>
+        <p><span id="res2">Clique em converter quando estiver pronto</span> 
+            <select name="" id="caixaselect2">
+                <option value="mi">Milimetros</option>
+                <option value="cm" selected>Centimetros</option>
+                <option value="m">Metros</option>
+                <option value="km">Kilometros</option>
+            </select><br>
         <input type="button" value="Converter" onclick="converter1()"></p></p> 
     </section>
 
     <section>
-        <h1>Conversor de medidas de temperatura</h1>
+        <h1>Conversor de medidas de temperatura</h1> <!--CONVERSOS TEMPERATURA-->
         <p>Insira o primeiro dado <br><input type="number" name="4-txt1" id="4-txt1"> 
             <select name="" id="caixaselect">
                 <option value="k">Kelvin</option>
                 <option value="c">Celsius</option>
                 <option value="f">Fahrenheit</option>
             </select></p>
-        <p>Insira o segundo dado <br><input type="number" name="4-txtn2" id="4-txtn2">
+        <p><span id="res3">Clique em converter quando estiver pronto</span>  
             <select name="" id="caixaselect">
                 <option value="k">Kelvin</option>
                 <option value="c">Celsius</option>
@@ -71,21 +72,22 @@
             <input type="button" value="Converter" onclick="converter2()"></p></p> 
     </section>
     <section>
-        <h1>Conversor de medidas de peso e massa</h1>
+        <h1>Conversor de medidas de peso e massa</h1> <!--CONVERSOR PESO-->
         <p>Insira o primeiro dado <br><input type="number" name="5-txt1" id="5-txt1"> 
             <select name="" id="caixaselect">
-                <option value="k">Kelvin</option>
-                <option value="c">Celsius</option>
-                <option value="f">Fahrenheit</option>
+                <option value="g">Gramas</option>
+                <option value="kg">Kilos</option>
+                <option value="ton">Toneladas</option>
             </select></p>
-        <p>Insira o segundo dado <br><input type="number" name="5-txtn2" id="5-txtn2">
+        <p><span id="res4">Clique em converter quando estiver pronto </span>
             <select name="" id="caixaselect">
-                <option value="k">Kelvin</option>
-                <option value="c">Celsius</option>
-                <option value="f">Fahrenheit</option>
+                <option value="g">Gramas</option>
+                <option value="kg">Kilos</option>
+                <option value="ton">Toneladas</option>
             </select><br>
             <input type="button" value="Converter" onclick="converter3()"></p></p> 
     </section>
+    <script src="script.js"></script>
     
 </body>
 </html>
