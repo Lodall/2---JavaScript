@@ -69,6 +69,17 @@ function multi(){
     let resultado = n1 * n2
     res.innerHTML = `O resultado da multiplicação de ${n1} vezes ${n2} é ${resultado}`
 }
+function expo(){
+    
+    let num1 = document.getElementById('2-txtn1')
+    let num2 = document.getElementById('2-txtn2')
+    let res = document.getElementById('res1')
+
+    n1 = Number(num1.value)
+    n2 = Number(num2.value)
+
+    let resultado = Math.pow(n1,  n2)
+    res.innerHTML = `O resultado da exponenciação de ${n1} elevado a ${n2} é ${resultado}`
 
 function converter1(){
     
@@ -82,12 +93,15 @@ function converter1(){
     let cm = document.getElementById('cm')
     let metr = document.getElementById('m')
     let kilom = document.getElementById('km')
+
+    let oppselec = opp.selectedIndex
+    let oppselec2 = opp2.selectedIndex
+
     res.innerHTML = "10"
-    console.log(opp2)
+    
 
-    switch(opp.selectedIndex){
-        case 0: 
-
+    if (oppselec == 0 && oppselec2 == 1){
+        res.innerHTML = "10"
     }
     
 
@@ -109,4 +123,4 @@ function converter1(){
     console.log(selectOptionBoxOne)
     console.log(selectOptionBoxTwo)   
 }*/
-}
+}}
