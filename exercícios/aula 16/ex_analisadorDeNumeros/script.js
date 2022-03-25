@@ -1,15 +1,15 @@
-function add(){
-    let fnumber = document.getElementById('txtn')
-    number = Number(fnumber.value)
-    allNumbers = 0
-    biggerNumber = 0
-    smallestNumber = ''
-    sumOfNumbers = 0
-    avarage = 0
-    selec = document.getElementById('selec')
-    c = 0
-    res = document.getElementById('res')
+let fnumber = document.getElementById('txtn')
+number = Number(fnumber.value)
+allNumbers = 0
+biggerNumber = 0
+smallestNumber = ''
+sumOfNumbers = 0
+avarage = 0
+selec = document.getElementById('selec')
+c = 0
+res = document.getElementById('res')
 
+function add(){
     if (number > 100 || number <= 0 || number == ''){
         window.alert('Invalid value, please enter a number from 1 to 100.')
     } else{
@@ -17,9 +17,9 @@ function add(){
             biggerNumber = number
         }
         if (number == ''){
-            smallestNumber = number
+            smallestNumber == number
         } else if(number < smallestNumber){
-            smallestNumber = number
+            smallestNumber == number
             
         }
         c++
