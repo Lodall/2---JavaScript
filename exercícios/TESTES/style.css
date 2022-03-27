@@ -1,0 +1,10 @@
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+}
