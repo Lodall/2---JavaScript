@@ -1,6 +1,6 @@
-#div1{
+section > div{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;
     width: 200px;
